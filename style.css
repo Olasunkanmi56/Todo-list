@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background: pink;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+.container{
+    background: #fff;
+    width: 350px;
+    border-radius: 5px;
+    z-index: 1;
+}
+
+header {
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 20px;
+}
+
+.input-field {
+    display: flex;
+    justify-content: center;
+}
+
+.input-field input{
+    width: 85%;
+    font-size: 22px;
+    border-radius: 5px;
+    outline: 0;
+    padding: 7px 10px;
+    height: 100%;
+    border: 1px solid #ccc;
+}
+.input-field button{
+    width: 10%;
+    margin-left: 5px;
+    border-radius: 5px;
+    color: #fff;
+    background: deeppink;
+    font-size: 15px;
+    border: none;
+    outline: none;
+    opacity: 0.6;
+}
+
+.input-field button.active{
+    opacity: 1;
+}
+
+.todolist {
+    list-style: none;
+    margin: 15px 0px;
+    width: 100%;
+    text-align:center;
+    max-height: 230px;
+    overflow-y: auto;
+}
+
+.todolist::-webkit-scrollbar{
+    width: 0;
+}
+
+.todolist li{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background-color: #ccc;
+    margin: 5px;
+    border-radius: 3px;
+    position: relative;
+    overflow: hidden;
+}
+
+
+.todolist li span{
+    color: #fff;
+    background: red;
+    padding: 15px;
+    width: 45px;
+    position: absolute;
+    right: -45px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    text-align: center;
+}
+
+.todolist li:hover span{
+    right: 0px;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin:0px 10px;
+    padding: 20px 0px;
+}
+
+.footer p{
+    font-size: 17px;
+}
+
+.footer button{
+    font-size: 22px;
+    padding: 7px;
+    color: #fff;
+    background: deeppink;
+    outline: none;
+    border: 0;
+    border-radius: 5px;
+}
